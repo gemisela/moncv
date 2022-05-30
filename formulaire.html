@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="style.css1">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,46 @@
 </head>
 <body>
  <form>
-     <label for="usernam">Nom d'utilisateur:</label> <br>
-     <input type=" texte" name="userman" id="usernam"> <br>
+     <div>
+        <label for="usernam">Nom d'utilisateur:</label> <br>
+        <input type=" texte" name="userman" id="usernam"> <br>
+     </div>
+    <div>
+        <label for="user-pwd">Mot de passe:</label> <br>
+        <input type="password" name="user-password" id="user-pwd"> <br> 
+    </div>
+    <div>
+        <input type="radio" name="genre" id="masculin"> 
+         <label for="masculin">Masculin</label> 
+         <input type="radio" name="genre" id="feminin">
+        <label for="feminin">Féminin</label> <br>
+    </div>
 
-     <label for="user-pwd">Mot de passe:</label> <br>
-     <input type="password" name="user-password" id="user-pwd"> <br> 
+     <div>
+         <input type="checkbox" name="sports" id="football"> 
+         <label for="soccer">Football</label>
+     </div>
 
-     <input type="radio" name="genre" id="masculin"> 
-     <label for="masculin">Masculin</label> 
-     <input type="radio" name="genre" id="feminin">
-     <label for="feminin">Féminin</label> <br>
+      <div>
+        <input type="checkbox" name="sports" id="musique">
+        <label for="cricket">Musique</label>
+      </div>
 
-     <input type="checkbox" name="sports" id="football"> 
-     <label for="soccer">Football</label> 
+      <div>
+        <input type="checkbox" name="sports" id="lecture">
+        <label for="basaball">Lecture</label> <br>
+      </div>
 
-     <input type="checkbox" name="sports" id="musique">
-     <label for="cricket">Musique</label> 
+     <div>
+        <label for="file select">Téléviser un fichier</label> 
+        <input type="file" name="upload" id="file-select"> <br>
+     </div>
 
-     <input type="checkbox" name="sports" id="lecture">
-     <label for="basaball">Lecture</label> <br>
+    <div>
+        <label for="biographie">biographie</label>
+        <textarea name="biographie" id="biographie" cols="40" rows="5"></textarea> <br> 
+    </div>
 
-     <label for="file select">Téléviser un fichier</label> 
-     <input type="file" name="upload" id="file-select"> <br>
-
-     <label for="biographie">biographie</label>
-     <textarea name="biographie" id="biographie" cols="40" rows="5"></textarea> <br>
-     
      <label for="ville">Ville:</label>
 
      <select name="ville" id="ville">
@@ -42,11 +57,17 @@
          <option value="goma">Goma</option> <br>
      </select>
 
-     <label for="prénom">Prénom:</label> <br>
-     <input type=" texte" name="prénom" id="prénom"> <br>
+     <div>
+         <label for="prénom">Prénom:</label> <br>
+        <input type=" texte" name="prénom" id="prénom"> <br>
+     </div>
+    
+     <div>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Reset"> <br>
+     </div>
 
-     <input type="submit" value="Envoyer">
-     <input type="reset" value="Reset"> <br>
+     
 
      <fieldset>
          <legend>contacts</legend>
